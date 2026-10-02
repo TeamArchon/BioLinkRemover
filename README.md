@@ -1,6 +1,7 @@
+# 🛡️ BioLinkRemover Bot
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamArchon/BioLinkRemover)
 
-# 🛡️ BioLinkRemover Bot
 
 `BioLinkRemover` is a powerful, production-ready Telegram group security and auto-moderation bot. It automatically scans the biography/about sections of users sending messages in your group. If a user's bio contains spam links, blacklisted domains, or dirty words, the bot deletes their message and applies a configurable punishment (mute, kick, or ban).
 
