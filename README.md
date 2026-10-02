@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheArchon/BioGuard)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamArchon/BioLinkRemover)
 
 # 🛡️ BioLinkRemover Bot
 
@@ -18,47 +18,6 @@
 - **Silent Database Registration:** Automatically caches and stores user and group data into MongoDB on first contact.
 - **Broadcast System:** Owner-only commands to broadcast text or forward media to all registered groups and users.
 - **High Performance Caching:** Utilizes in-memory sets and TTL caches for whitelists, configs, and admin lists to prevent rate limits and API FloodWaits.
-
----
-
-## 🛠️ Project Structure
-
-```
-BioLinkProtections/
-├── .env                  # Environment configuration secrets
-├── requirements.txt      # Project python dependencies
-├── config.py             # Global configurations & environment variable loader
-├── main.py               # Application entrypoint
-├── setup.sh              # Bash installer for Linux VPS deployment
-├── Client/
-│   ├── __init__.py
-│   ├── bot.py            # Custom Client subclass with db connection and startup caching
-│   ├── database.py       # Asynchronous MongoDB database driver (Motor)
-│   ├── cache.py          # Shared sets and dicts for caching whitelists, config, and admins
-│   └── helpers.py        # Shared permission checking and cache retrievers
-└── plugins/
-    ├── __init__.py
-    ├── admin.py          # Group moderation & owner broadcast commands
-    ├── start.py          # /start command greeting menus (PM & Groups)
-    └── watcher.py        # Core bio scanner and automated card interactions
-```
-
----
-
-## 📋 Commands Index
-
-| Command | Scope | Level | Description |
-| :--- | :--- | :--- | :--- |
-| `/start` | PM & Groups | All Users | Starts the bot; returns interactive welcoming menus. |
-| `/help` | PM & Groups | Admins / Owner | Displays help details tailored to permissions. |
-| `/approve` | Groups | Group Admins | Whitelists a user (via reply or ID/username) to bypass bio scans. |
-| `/unapprove` | Groups | Group Admins | Removes a user from the group whitelist. |
-| `/unapproveall`| Groups | Group Admins | Clears all whitelisted users in the current group. |
-| `/approved` | Groups | Group Admins | Lists all currently whitelisted users in the group. |
-| `/config` | Groups | Group Admins | Configures punishment mode (`ban`, `mute`, `kick`) via buttons. |
-| `/stats` | Private Chat | Bot Owner | Shows bot usage stats (registered users and groups). |
-| `/gcast` | Private Chat | Bot Owner | Broadcasts text or forwards a replied message to all groups. |
-| `/ucast` | Private Chat | Bot Owner | Broadcasts text or forwards a replied message to all users. |
 
 ---
 
