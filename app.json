@@ -1,5 +1,5 @@
 {
-  "name": "biolinkremover",
+  "name": "BioLinkRemover",
   "description": "Telegram BioLinkRemover security and moderation bot",
   "keywords": [
     "telegram",
@@ -8,7 +8,7 @@
     "moderation",
     "biolink"
   ],
-  "repository": "https://github.com/TheArchon/BioGuard",
+  "repository": "https://github.com/TheArchon/BioLinkRemover",
   "env": {
     "OWNER_ID": {
       "description": "Telegram user ID of the bot owner",
