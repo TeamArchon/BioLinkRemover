@@ -1,0 +1,55 @@
+{
+  "name": "biolinkremover",
+  "description": "Telegram BioLinkRemover security and moderation bot",
+  "keywords": [
+    "telegram",
+    "bot",
+    "pyrogram",
+    "moderation",
+    "biolink"
+  ],
+  "repository": "https://github.com/TheArchon/BioGuard",
+  "env": {
+    "OWNER_ID": {
+      "description": "Telegram user ID of the bot owner",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Telegram bot token from @BotFather",
+      "required": true
+    },
+    "MONGO_DB": {
+      "description": "MongoDB connection URI",
+      "required": true
+    },
+    "MONGODB_DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "BioLinkRemover",
+      "required": true
+    },
+    "LOGGER_GROUP": {
+      "description": "Telegram group/channel ID used for bot logs",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "stack": "heroku-24"
+}
