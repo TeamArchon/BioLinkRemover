@@ -8,7 +8,7 @@
     "moderation",
     "biolink"
   ],
-  "repository": "https://github.com/TheArchon/BioLinkRemover",
+  "repository": "https://github.com/TeamArchon/BioLinkRemover",
   "env": {
     "OWNER_ID": {
       "description": "Telegram user ID of the bot owner",
