@@ -102,7 +102,7 @@ If you configured the systemd service:
 ## 💳 Credits & License
 
 Made with ❤️ by:
-- **Archon:** [@TheArchon](https://github.com/TheArchon)
+- **Archon:** [@ArchonCEO](https://github.com/TheArchon)
 - **Telegram:** [@ArchonNetwork](https://t.me/ArchonNetwork)
 - **Ayush:** [@mightyayush](https://github.com/mightyayush)
 
